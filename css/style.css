@@ -1,0 +1,191 @@
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+table.coffeCalc {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.coffeCalcc,
+.table-bordered,
+.table-bordered td,
+.table-bordered thead td,
+.table-bordered thead th {
+  border: 1px solid #9a5e32;
+}
+
+table.coffeCalc th,
+td {
+  border: 1px solid #9a5e32;
+}
+
+table.coffeCalc thead tr th:first-child {
+  text-align: left;
+}
+
+table.coffeCalc tbody tr td:first-child {
+  text-align: left;
+}
+
+table.coffeCalc tfoot,
+table.coffeCalc thead tr:first-child {
+  background-color: #9a5e32 !important;
+  color: #fff;
+}
+
+table.coffeCalc tbody tr td:first-child {
+  text-align: left;
+}
+
+table.coffeCalc tbody tr:nth-child(odd)>td {
+  background-color: #e0cec1;
+}
+
+table.coffeCalc tbody tr:nth-child(even)>td {
+  background-color: #ebebeb;
+}
+
+table.coffeCalc tr {
+  /*border: 1px solid #ddd;*/
+  padding: 5px;
+}
+
+table.coffeCalc th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+table.coffeCalc th {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+span.liquid:first-letter {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  table.coffeCalc,
+  .table-bordered,
+  .table-bordered td {
+    border: 0;
+  }
+  table.coffeCalc thead {
+    display: none;
+  }
+  table.coffeCalc tr {
+    margin-bottom: 10px;
+    display: block;
+    /*border-bottom: 2px solid #ddd;*/
+  }
+  table.coffeCalc td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    /*border-bottom: 1px dotted #ccc;*/
+  }
+  table.coffeCalc tbody tr td:first-child {
+    background-color: #9a5e32 !important;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table.coffeCalc td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  .addcup:before {
+    content: attr(data-cup);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .liquid:before {
+    content: attr(data-liquid);
+    float: left;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.qty .count {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 2px;
+  min-width: 35px;
+  text-align: center;
+}
+
+.qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 28px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+div {
+  text-align: center;
+}
+
+.minus:hover {
+  background-color: #717fe0 !important;
+}
+
+.plus:hover {
+  background-color: #717fe0 !important;
+}
+
+/*Prevent text selection*/
+
+span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input.count {
+  border: 0;
+  width: 2%;
+}
+
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:disabled {
+  background-color: white;
+}
+
