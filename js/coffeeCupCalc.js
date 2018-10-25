@@ -172,7 +172,7 @@
       });
 
       function drawTable() {
-        alert(settings.text)
+        //alert(settings.text)
         $('#coffeTable').append("<table class='coffeCalc'><thead></thead><tbody></tbody><tfoot></tfoot></table><br>" );
         $('#coffeTable').append("<div class='qty mt-5'><span class='minus bg-dark'>-</span><input type='number' class='count' name='qty' value='1'><span class='plus bg-dark'>+</span></div>" );        
         }
